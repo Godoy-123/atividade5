@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #2da62b;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+button#limparLista {
+    background-color: #ca0000;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item span {
+    flex-grow: 1;
+}
+
+.task-item button.remove-task {
+    background: none;
+    border: none;
+    color: #ff0000;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-count {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
